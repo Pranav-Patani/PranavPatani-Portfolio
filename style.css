@@ -4,7 +4,7 @@
   --primary-color: #1c1917;
   --text-color: #292524;
   --text-color-white: #d4d4d4;
-  --heading-text-color: #404040;
+  --heading-text-color: #44403c;
   --white: #fafaf9;
   --off-white: #f5f5f4;
   --text-highlight: #57534e;
@@ -51,7 +51,7 @@ hr {
 }
 
 .link-primary {
-  background-color: var(--primary-color);
+  background-color: var(--text-color);
   border-radius: 0.5rem;
   color: var(--text-color-white);
 }
@@ -59,7 +59,7 @@ hr {
 .link-secondary {
   color: var(--primary-color);
   border-radius: 0.5rem;
-  border: 2px solid var(--primary-color);
+  border: 2px solid var(--text-color);
 }
 
 /**Lists**/
@@ -84,6 +84,14 @@ hr {
   border-radius: 2rem;
   padding: 2.5rem;
   margin: 1rem auto;
+  background-color: var(--white);
+}
+
+.index-card {
+  border: 2px solid var(--border-color);
+  padding: 1.5rem;
+  border-bottom-right-radius: 1.5rem;
+  border-top-left-radius: 1.5rem;
   background-color: var(--white);
 }
 
@@ -159,6 +167,26 @@ hr {
 
 .off-white-section {
   background-color: var(--off-white);
+}
+
+/**logos**/
+
+.logos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.logos img {
+  width: 7rem;
+}
+
+.logos a {
+  display: inline-block;
+  text-align: center;
+  margin: 2rem;
+  text-decoration: none;
+  color: var(--text-color);
 }
 
 /**footer**/
